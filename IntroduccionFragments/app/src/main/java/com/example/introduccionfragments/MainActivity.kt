@@ -10,8 +10,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding= ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
+        binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.button1.setOnClickListener{startActivity(Intent(this,Ej1FragmentsEstaticosActivity::class.java))}
